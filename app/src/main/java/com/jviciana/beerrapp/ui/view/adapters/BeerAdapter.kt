@@ -42,7 +42,7 @@ class BeerAdapter(private var items: List<BeerModel>) : RecyclerView.Adapter<Bee
                 findViewById<ImageView>(R.id.beerImageView).loadImage(beers.image)
                 findViewById<TextView>(R.id.beerTextView).text = beers.name
                 findViewById<TextView>(R.id.beerDetailsTextView).text = beers.description
-                findViewById<TextView>(R.id.beerAbvTitleTextView).text = "${beers.abv}%"
+                findViewById<TextView>(R.id.beerAbvTitleTextView).text = "${holder.view.context.resources.getString(R.string.abv)} ${beers.abv}%"
                 findViewById<MaterialButton>(R.id.closeButton).setOnClickListener { cancel() }
                 show()
             }
