@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="300dp"
+	android:layout_height="wrap_content"
+	android:id="@+id/detailsLayout"
+	android:background="@drawable/rounded_edittext"
+	android:layout_margin="5dp"
+	android:padding="16dp"
+	>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+
+	<com.google.android.material.button.MaterialButton
+		android:id="@+id/closeButton"
+		android:layout_width="40dp"
+		android:layout_height="40dp"
+		android:background="@drawable/ic_baseline_cancel_24"
+		app:backgroundTint="@color/dark_orange"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"/>
+
+	<ImageView
+		android:id="@+id/beerImageView"
+		android:layout_width="150dp"
+		android:layout_height="150dp"
+		android:src="@mipmap/ic_launcher"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"/>
+
+	<TextView
+		android:id="@+id/beerTextView"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:text="NOMBRE"
+		android:textColor="@color/dark_orange"
+		android:textStyle="bold"
+		android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+		app:layout_constraintTop_toBottomOf="@+id/beerImageView"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		android:gravity="center"
+		android:layout_marginTop="16dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginEnd="16dp"/>
+
+	<TextView
+		android:id="@+id/beerDetailsTextView"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:text="TEXTO ULTRA LARGOO TEXTO ULTRA LARGOO TEXTO ULTRA LARGOO TEXTO ULTRA LARGOO TEXTO ULTRA LARGOO TEXTO ULTRA LARGOO TEXTO ULTRA LARGOO TEXTO ULTRA LARGOO TEXTO ULTRA LARGOO"
+		android:textColor="@color/dark_orange"
+		android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+		app:layout_constraintTop_toBottomOf="@+id/beerTextView"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		android:gravity="center"
+		android:layout_marginTop="16dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginEnd="16dp"/>
+
+	<TextView
+		android:id="@+id/beerAbvTitleTextView"
+		android:layout_width="0dp"
+		android:layout_height="wrap_content"
+		android:text="Abv: 6.0%"
+		android:textColor="@color/dark_orange"
+		android:textStyle="bold"
+		android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+		app:layout_constraintTop_toBottomOf="@+id/beerDetailsTextView"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		android:gravity="center"
+		android:layout_marginTop="16dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginEnd="16dp"/>
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
